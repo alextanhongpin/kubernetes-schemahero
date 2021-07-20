@@ -1,0 +1,11 @@
+apiVersion: databases.schemahero.io/v1alpha4
+kind: Database
+metadata:
+  name: test # This must be the database name.
+  namespace: schemahero-tutorial
+spec:
+  connection:
+    postgres:
+      uri:
+        # Note: when connecting to externally hosted database, use H.D.I.
+        value: postgres://john:123456@host.docker.internal:5432/test?sslmode=disable
