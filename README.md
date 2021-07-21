@@ -14,6 +14,9 @@ SchemaHero v0.12.3
 # Install.
 $ k schemahero install
 
+# Uninstall.
+$ k schemahero install --yaml | kubectl delete -f -
+
 # Validate.
 $ k get po -n schemahero-system
 
